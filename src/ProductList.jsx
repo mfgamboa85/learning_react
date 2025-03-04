@@ -9,7 +9,7 @@ function ProductList({ onHomeClick }) {
     const [addedToCart, setAddedToCart] = useState({})
     const [showCart, setShowCart] = useState(false);
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
-console.log("addedToCart")
+
 console.log(addedToCart)
     const plantsArray = [
         {
@@ -286,8 +286,6 @@ console.log(addedToCart)
     };
 
     const handleAddToCart = (e) => {
-        console.log("added")
-        console.log(e)
         dispatch(addItem(e))
         setAddedToCart(prevCart => ({
             ...prevCart,
