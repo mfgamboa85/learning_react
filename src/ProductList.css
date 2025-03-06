@@ -39,6 +39,17 @@ body {
    
 }
 
+.navbar .cart-link {
+    position: relative;
+}
+
+.navbar .cart-total-items {
+    position: absolute;
+    top: 18px;
+    left: 26px;
+    font-size: 24px;
+}
+
 /* Product Grid */
 .product-grid {
     display:flex;
@@ -47,12 +58,11 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .product-list {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    /* background-color: pink; */
-    /* justify-content: space-between; */
     padding: 20px;
     width: 100%;
     align-items: center;
